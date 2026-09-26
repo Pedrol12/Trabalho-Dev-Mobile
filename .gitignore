@@ -2,3 +2,5 @@ node_modules/
 database.sqlite
 *.log
 .env
+android/.idea/
+android/local.properties

@@ -1,15 +1,19 @@
+
 package com.example.appdeteccaocachorro
 
-//guarda os dados de UM objeto detectado pelo modelo
+import java.util.UUID
+
+// Guarda os dados de UM objeto detectado pelo modelo
 data class Deteccao(
     val rotuloClasse: String,
     val confianca: Float,
     val xMin: Float,
     val yMin: Float,
     val xMax: Float,
-    val yMax: Float
+    val yMax: Float,
+    val id: String = UUID.randomUUID().toString()
 ) {
-    //calculos
+    // Calculos geometricos
     val larguraPx: Float get() = xMax - xMin
     val alturaPx: Float get() = yMax - yMin
     val centroideX: Float get() = xMin + larguraPx / 2

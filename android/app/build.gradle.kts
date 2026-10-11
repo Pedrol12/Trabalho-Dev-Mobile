@@ -45,6 +45,10 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
 
+    // ViewModel - arquitetura MVVM
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0")
+
+    implementation("androidx.compose.material:material-icons-extended")
 
     // ONNX Runtime - roda o modelo de IA
     implementation("com.microsoft.onnxruntime:onnxruntime-android:1.17.0")

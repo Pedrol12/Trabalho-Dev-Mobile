@@ -1,6 +1,19 @@
+
 node_modules/
 database.sqlite
 *.log
+
+# Senhas e configurações privadas
 .env
+.env.*
+!.env.example
+
+# Android Studio
 android/.idea/
 android/local.properties
+android/.gradle/
+android/build/
+android/app/build/
+
+# Arquivos temporários
+.DS_Store
